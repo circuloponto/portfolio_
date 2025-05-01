@@ -8,7 +8,7 @@ const slides = [
     id: 1,
     title: 'Lambda Blog',
     description: 'A blog about functional programming in Javascript',
-    image: '/src/image/lambdaBlog.png',
+    image: new URL('../image/lambdaBlog.png', import.meta.url).href,
     technologies: ['Next.js', 'Supabase', 'Tailwind'],
     link: 'https://lambda-blog-q7mz.vercel.app/'
   },
@@ -16,7 +16,7 @@ const slides = [
     id: 2,
     title: 'Next Notes',
     description: 'A note-taking application built with Next.js',
-    image: '/src/image/nextNotes.png',
+    image: new URL('../image/nextNotes.png', import.meta.url).href,
     technologies: ['Next.js', 'Supabase', 'Tailwind', 'Framer Motion'],
     link: 'https://nextnotes-three.vercel.app/'
   },
@@ -24,7 +24,7 @@ const slides = [
     id: 3,
     title: 'Patreon Clone',
     description: 'A clone of the Patreon platform with key features',
-    image: '/src/image/patreonClone.png',
+    image: new URL('../image/patreonClone.png', import.meta.url).href,
     technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
     link: 'https://patreon-clone-erga.vercel.app/'
   },
@@ -32,7 +32,7 @@ const slides = [
     id: 4,
     title: 'Split Split',
     description: 'An expense splitting application for groups',
-    image: '/src/image/splitSplit.png',
+    image: new URL('../image/splitSplit.png', import.meta.url).href,
     technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
     link: 'https://split-split.vercel.app/'
   }
