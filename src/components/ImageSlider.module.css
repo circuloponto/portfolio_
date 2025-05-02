@@ -188,20 +188,20 @@
   display: inline-block;
   margin-top: 10px;
   padding: 5px 12px;
-  background-color: #ea3c3c;
-  color: white;
+  background-color: white;
+  color: #ea3c3c;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   border-radius: 4px;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .projectLink:hover {
-  background-color: #d62c2c;
+  background-color: #f8f8f8;
   transform: translateY(-1px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .projectLink:active {

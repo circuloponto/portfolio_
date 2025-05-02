@@ -3257,83 +3257,68 @@ textarea:focus {
   }
 }
 @media only screen and (max-width: 700px) {
-  .scrollTopButton {
-    right: 30px;
-  }
-  .buttonContact {
-    align-self: center;
-    margin: -30px 0 0 0;
-  }
-  .contactInfo {
-    width: 50vw;
-    height: 350px;
-  }
   .home {
     width: 100vw;
     margin: 50px 0 0 0;
-    height: 804px;
-    padding: 0px 0px;
+    height: auto;
+    min-height: 0;
+    padding: 0 0 50px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /*  border-top: 1px solid red; */
   }
+  
   .homeInfo {
-    width: 60vw;
+    width: 90vw;
     background: rgba(255, 255, 0, 0);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    margin: 0px 120px 0px 0px;
+    margin: 0;
+    padding: 0 20px;
   }
+  
   .title {
-    /* font-size: 20px; */
-    display: flex;
-    align-items: center;
-    /* font-family: 'Inter', sans-serif; */
-    margin: 0px 0 20px 0;
+    margin: 0 0 10px 0;
+    width: 100%;
   }
+  
   .presentation {
-    width: 90vw;
-    line-height: 50px;
+    width: 100%;
+    line-height: 1.4;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     font-size: 24px;
   }
-  .presentation span {
-    color: #ea3d3c;
-    font-size: 25px;
-  }
+  
   .introduction {
-    margin: 0 0 30px 0;
-    width: 80vw;
+    margin: 0 0 15px 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
   }
+  
   .picture {
-    width: 300px;
-    height: 350px;
-    margin: -30px 50px 0 0;
+    width: 250px;
+    height: 250px;
+    margin: 0;
   }
-
+  
   .innerPicture {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
+  
   .photo {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
+  
   .photoGlitch {
-    width: 350px;
-    height: 350px;
-  }
-  .about {
-    /* padding: 0 10px; */
-    height: 850px;
-  }
-  .overlay {
-    height: 850px;
+    width: 250px;
+    height: 250px;
   }
 }
 @media only screen and (max-width: 550px) {
