@@ -7,13 +7,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+// Import images
+import lambdaBlog from '../image/lambdaBlog.png';
+import nextNotes from '../image/nextNotes.png';
+import patreonClone from '../image/patreonClone.png';
+import splitSplit from '../image/splitSplit.png';
+
 // Project data with actual images and technology badges
 const slides = [
   {
     id: 1,
     title: 'Lambda Blog',
     description: 'A blog about functional programming in Javascript',
-    image: '/src/image/lambdaBlog.png',
+    image: lambdaBlog,
     technologies: ['Next.js', 'Supabase', 'Tailwind'],
     link: 'https://lambdablog.vercel.app/'
   },
@@ -21,7 +27,7 @@ const slides = [
     id: 2,
     title: 'Next Notes',
     description: 'A note-taking application built with Next.js',
-    image: '/src/image/nextNotes.png',
+    image: nextNotes,
     technologies: ['Next.js', 'Supabase', 'Tailwind', 'Framer Motion'],
     link: 'https://nextnotes-three.vercel.app/'
   },
@@ -29,7 +35,7 @@ const slides = [
     id: 3,
     title: 'Patreon Clone',
     description: 'A clone of the Patreon platform with key features',
-    image: '/src/image/patreonClone.png',
+    image: patreonClone,
     technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
     link: 'https://patreon-clone-erga.vercel.app/'
   },
@@ -37,7 +43,7 @@ const slides = [
     id: 4,
     title: 'Split Split',
     description: 'An expense splitting application for groups',
-    image: '/src/image/splitSplit.png',
+    image: splitSplit,
     technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
     link: 'https://split-split.vercel.app/'
   }
@@ -60,7 +66,7 @@ const ImageSlider = () => {
           modules={[Navigation, Pagination]}
           navigation
           pagination={{ clickable: true }}
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={1}
           loop={true}
           speed={500}
@@ -83,18 +89,16 @@ const ImageSlider = () => {
                     draggable="false"
                     onError={(e) => {
                       console.error(`Failed to load image: ${project.image}`);
-                      e.target.style.display = 'none';
+                      e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Found';
                     }}
                   />
                 </div>
                 <div className={styles.textArea}>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <div className={styles.badgesContainer}>
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className={styles.badge}>
-                        {tech}
-                      </span>
+                  <div className={styles.technologies}>
+                    {project.technologies.map((tech, index) => (
+                      <span key={index} className={styles.techTag}>{tech}</span>
                     ))}
                   </div>
                   <a 
