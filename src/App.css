@@ -592,7 +592,7 @@ header nav .showXbutton {
   transform: rotateY(0deg);
   max-width: 523px;
   max-height: 523px;
-  filter:hue-rotate(60deg);
+  filter:saturate(0.5);
 }
 .photoGlitch {
   display: none;
