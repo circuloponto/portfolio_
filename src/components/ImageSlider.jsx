@@ -96,9 +96,11 @@ const ImageSlider = () => {
                 <div className={styles.textArea}>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <div className={styles.technologies}>
-                    {project.technologies.map((tech, index) => (
-                      <span key={index} className={styles.techTag}>{tech}</span>
+                  <div className={styles.badgesContainer}>
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className={styles.badge}>
+                        {tech}
+                      </span>
                     ))}
                   </div>
                   <a 
